@@ -1,0 +1,37 @@
+<?php
+
+    require("config.php");
+
+    class Conectar{
+
+        public static function Conexion(){
+
+            // PDO
+            try{
+
+                $conexion= new PDO('mysql:host='.DB_HOST.'; dbname='.DB_NOMBRE.'; charset=utf8',DB_USUARIO,DB_CONTRA);
+
+                $conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+                return $conexion;
+
+            }catch(Exception $e){
+                echo "La Línea de error es: ". $e->getLine();
+            }
+
+
+
+            // MYSQLI
+            /*$this->conexion= new mysqli(DB_HOST,DB_USUARIO,DB_CONTRA,DB_NOMBRE);
+            if($this->conexion->connect_errno){
+                echo "Fallo al conectar a la base de datos ". $this->conexion->connect_error;
+                return;
+            }
+            $this->conexion->set_charset(DB_CHARSET);*/
+        }
+    }
+
+?>
+
+
+
