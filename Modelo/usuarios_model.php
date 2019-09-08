@@ -33,9 +33,18 @@
 
         public function agregar_usuarios($datos){
 
-            $sql= "INSERT INTO usuarios (Nombre,Apellido,Correo,Contra) VALUES ('$datos[0]','$datos[1]','$datos[2]','$datos[3]')";
+            $sql= "INSERT INTO usuarios (Nombre,Apellido,Correo,Contra) VALUES (:nombre,:apellido,:correo,:contra)";
             
-            $query= $this->db->query($sql);
+            $query= $this->db->prepare($sql);
+
+            $array= array(":nombre"=>$datos[0],
+                            ":apellido"=>$datos[1],
+                            ":correo"=>$datos[2],
+                            ":contra"=>$datos[3]);
+
+            $query->execute($array);
+            
+            //$query= $this->db->query($sql);
 
             return $query;
         }

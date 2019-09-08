@@ -40,6 +40,7 @@
                         <td><?php echo $fila['Correo'];?></td>
 
                         <td><?php echo $fila['Contra'];?></td>
+                        
                         <td><a  class="btn btn-primary" href="Controlador/get_usuario.php?id=<?php echo $fila['ID'];?>" role="button">Editar</a></td>
                         <td><a  class="btn btn-danger" href="Controlador/eliminar_usuario.php?id=<?php echo $fila['ID'];?>" role="button">Eliminar</a></td>
                     </tr>
