@@ -14,5 +14,5 @@
 
     $usuario->modificar_usuario($datos);
 
-    require_once "../index.php";
+    header("Location:../Controlador/usuarios_controlador.php");
 ?>

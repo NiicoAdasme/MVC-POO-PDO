@@ -3,9 +3,9 @@
         <div id="mySidenav" class="sidenav">
         <a class="text-white" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a class="display-3 text-white" href="../index.php">&#127969;Inicio</a>
-        <a class="display-3 text-white" href="usuarios.php">&#128218;Usuarios</a>
-        <a class="display-3 text-white" href="">&#127760;Libros</a>
-        <!--<a class="display-3 text-white" href="#">&#128113;Alumnos</a>
+        <a class="display-3 text-white" href="../Controlador/usuarios_controlador.php">&#128218;Usuarios</a>
+        <!--<a class="display-3 text-white" href="">&#127760;Libros</a>
+        <a class="display-3 text-white" href="#">&#128113;Alumnos</a>
         <a class="display-3 text-white" href="#">&#127936;Actividades Extra Programaticas</a>
         <a class="display-3 text-white" href="#">&#127969;Ciudad</a>
         <a class="display-3 text-white" href="#">&#128236;Región</a>

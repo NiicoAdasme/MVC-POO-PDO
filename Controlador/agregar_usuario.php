@@ -18,5 +18,5 @@
 
     $usuario->agregar_usuarios($datos);
 
-    header("location:../index.php");
+    header("location:../Controlador/usuarios_controlador.php");
 ?>

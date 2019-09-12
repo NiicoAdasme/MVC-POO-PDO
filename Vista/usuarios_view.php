@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="img/icono.ico">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/alertify.css">
-    <link rel="stylesheet" href="css/default.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../Vista/img/icono.ico">
+    <link rel="stylesheet" href="../Vista/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Vista/css/estilos.css">
+    <link rel="stylesheet" href="../Vista/css/alertify.css">
+    <link rel="stylesheet" href="../Vista/css/default.css">
     <title>Usuarios</title>
 </head>
 <body>
-
+<?php include("../Vista/header.php"); ?>
     <div class="container mt-5">
     <div class="row">
         <div class="table-responsive col-sm-12 col-xs-12 col-md-12">
@@ -41,13 +41,13 @@
 
                         <td><?php echo $fila['Contra'];?></td>
                         
-                        <td><a  class="btn btn-primary" href="Controlador/get_usuario.php?id=<?php echo $fila['ID'];?>" role="button">Editar</a></td>
-                        <td><a  class="btn btn-danger" href="Controlador/eliminar_usuario.php?id=<?php echo $fila['ID'];?>" role="button">Eliminar</a></td>
+                        <td><a  class="btn btn-primary" href="get_usuario.php?id=<?php echo $fila['ID'];?>" role="button">Editar</a></td>
+                        <td><a  class="btn btn-danger" href="eliminar_usuario.php?id=<?php echo $fila['ID'];?>" role="button">Eliminar</a></td>
                     </tr>
                     <?php endforeach;?>
                     <td></td>
 
-                    <form action="Controlador/agregar_usuario.php" method="post">
+                    <form action="agregar_usuario.php" method="post">
                         <td><input type="text" class="form-control" name="nombre"></td>
                         <td><input type="text" class="form-control" name="apellido"></td>
                         <td><input type="email" class="form-control" name="correo"></td>
@@ -60,11 +60,11 @@
         </div>
     </div>
 </div>
+<?php include("../Vista/footer.php"); ?>
 
-
-    <script src="js/script.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/alertify.js"></script>
+    <script src="../Vista/js/script.js"></script>
+    <script src="../Vista/js/jquery-3.4.1.min.js"></script>
+    <script src="../Vista/js/bootstrap.min.js"></script>
+    <script src="../Vista/js/alertify.js"></script>
 </body>
 </html>

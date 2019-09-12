@@ -18,7 +18,10 @@
     <h1 class="display-4 text-center pb-5">CRUD</h1>
 </div>
 
-<?php require_once "Controlador/usuarios_controlador.php"; ?>
+<div class="text-center pb-5">
+    <a class="display-4" href="Controlador/usuarios_controlador.php">Usuarios View</a>
+</div>
+<?php //require_once "Controlador/usuarios_controlador.php"; ?>
 
 <?php include("footer.php"); ?>
 <script src="Vista/js/script.js"></script>

@@ -7,5 +7,5 @@
 
     $usuario->eliminar_usuarios($id);
 
-    header("location:../index.php");
+    header("location:../Controlador/usuarios_controlador.php");
 ?>
