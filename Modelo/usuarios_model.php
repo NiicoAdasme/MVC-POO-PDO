@@ -1,4 +1,5 @@
 <?php
+
     class usuarios_model{
 
         private $db;
