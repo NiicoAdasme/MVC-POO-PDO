@@ -9,7 +9,7 @@
             // PDO
             try{
 
-                $conexion= new PDO('mysql:host='.DB_HOST.'; dbname='.DB_NOMBRE.'; charset=utf8',DB_USUARIO,DB_CONTRA);
+                $conexion= new PDO('mysql:host='.DB_HOST.'; dbname='.DB_NOMBRE.'; charset='.DB_CHARSET,DB_USUARIO,DB_CONTRA);
 
                 $conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
